@@ -22,7 +22,7 @@ export class AddPatientComponent {
     this.api.addPatients(patients).subscribe(
       (response:any)=>{
         console.log(response)
-        if (response.status==200) {
+        if (response.status=="success") {
           alert("patient added successfully")
           this.patientname=""
           this.patientid=""
